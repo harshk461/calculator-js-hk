@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Calculator</title>
+    <script src='script.js'></script>
+    <link rel='stylesheet' href="style.css">
+</head>
+<body>
+    <div class='main-container'>
+        <form name='form1'>
+        <div class='result-container'>
+            <input id='result' type='text' name='result' value=''><br>
+        </div>
+        <div class='container-button'>
+        <input id='C' class='button c' type='button' name='C' value="C" style='background-color: rgb(16, 255, 16);' onclick="form1.result.value=''">
+        <input id='clr' class='button clr' type='button' name='clr' value="<-" onclick="Clear()">
+        <input id='percent'  class='button percent' type='button' name='percent' value="%" onclick="form1.result.value=(Number(eval(form1.result.value))/100)">
+        <input id='div' class='button div' type='button' name='div' value="/" style='margin-right: 10px;' onclick="form1.result.value+='/'">  
+            
+        <input id='first'  class='button 1' value="1" type='button' name='first' onclick="form1.result.value+='1'">
+        <input id='second' class='button 2'  type='button' name='second' value="2" onclick="form1.result.value+='2'">
+        <input id='third'  class='button 3' type='button' name='third' value="3" onclick="form1.result.value+='3'">
+        <input id='add'  class='button add' type='button' name='add' value="+" style='margin-right: 10px;' onclick="form1.result.value+='+'">
+        
+        <input id='fourth'  class='button 4' type='button' name='fourth' value="4" onclick="form1.result.value+='4'">
+        <input id='fifth'  class='button 5' type='button' name='fifth' value="5" onclick="form1.result.value+='5'">
+        <input id='sixth'  class='button 6' type='button' name='sixth' value="6" onclick="form1.result.value+='6'">
+        <input id='sub'  class='button sub' type='button' name='sub' value="-" style='margin-right: 10px;' onclick="form1.result.value+='-'">
+        
+        <input id='seventh' class='button 7'  type='button' name='seventh' value="7" onclick="form1.result.value+='7'">
+        <input id='eighth' class='button 8'  type=button name='eighth' value="8" onclick="form1.result.value+='8'">
+        <input id='ninth'  class='button 9' type='button' name='ninth' value="9" onclick="form1.result.value+='9'">
+        <input id='multi'  class='button multi' type='button' name='multi' style='margin-right: 10px;' value="x" onclick="form1.result.value+='*'">
+        
+        <input id='empt'  class='button exit' value="Exit" type='button' name='empt' onclick="window.close()">
+        <input id='zero'  class='button zero' type='button' name='zero' value="0" onclick="form1.result.value+='0'">
+        <input id='point'  class='button dot' type='button' name='point' value="." onclick="form1.result.value+='.'">
+        <input id='equal' class='button rst' type='button' name='equal' style='margin-right: 10px;' value="=" onclick="rst()">
+        </div>
+    </form>
+    </div>    
+</body>
+</html>
