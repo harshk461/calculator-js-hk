@@ -1,2 +1,2 @@
-# calculator-js-hk
-https://calculator-js-hk.netlify.app/
+# https://calculator-js-hk.netlify.app/
+Calculator in JS
