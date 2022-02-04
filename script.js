@@ -7,7 +7,15 @@ function rst(){
         document.getElementById('result').value=Num;
     }
 }
-
+function percentage(){
+    var Num=Number(eval(document.getElementById('result').value))
+    if(isNaN(Num)==true){
+        document.getElementById('result').value='';
+    }
+    else{
+        document.getElementById('result').value=Num/100;
+    }
+}
 function Clear(){
     var Num=document.getElementById('result').value;
     var NewNum=Num.slice(0,Num.length-1)

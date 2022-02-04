@@ -6,30 +6,36 @@ body{
     background: linear-gradient(to right top,rgb(83, 10, 218),rgb(0, 204, 255),dodgerblue);
 }
 .main-container{
-    width:400px;
-    border-radius: 30px;
+    margin: 10px;
+  width: 400px;
+  border-radius: 14px;
+  background: white;
+  box-shadow: 10px 10px 10px grey;
 }
+
 .result-container{
-    background-color: black;
-    width: 450px;
+    background: black;
+    color: white;
+    margin: 0%;
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+    width: 100%;
+    overflow-x: auto;
+    border-radius:10px 10px 0px 0px ;
 }
 #result{
-    display: block;
+    width: 100%;
+    padding: 10px;
+    font-size:40px;
+    text-align: end;
+    font-weight: 300;
     background-color: black;
-    border: none;
-    color: white;
-    font-size: 45px;
-    justify-content: flex-end;
-    align-items: right;
-    margin:0;
-    padding-top: 10px;
-    padding-bottom: 0px;
-    text-align: right;
-    width:400px;
+    color:#fff;
 }
 .container-button{
     background-color:rgb(133, 131, 131);
-    width: 450px;
+    width: 400px;
     display: grid;
     grid-template-columns: repeat(4,1fr);
     column-gap: 10px;
@@ -37,6 +43,7 @@ body{
     border-radius: none;
 }
 .button{
+    min-height: 50px;
     margin-left: 10px;
     color:blueviolet;
     border-radius: 10px;
